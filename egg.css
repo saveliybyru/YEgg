@@ -1,0 +1,400 @@
+a{
+  color: rgb(41, 171, 226);
+}
+
+
+.main{
+  background-color: #f8f9f8;
+  font: normal 0.75em/1.4 verdana, arial, sans-serif;
+  color: #666;
+}
+
+.main--wrapper{
+  width: 780px;
+  margin: auto;
+  position: relative;
+}
+
+.graphical-nav{
+  width: 780px;
+  height: 422px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 4px #fff;
+}
+
+.yota-logo, 
+.laptop, 
+.mobile-phone, 
+.printer, 
+.web-camera, 
+.psp, 
+.communicator, 
+.photocamera, 
+.egg-logo, 
+.main-device{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.yota-logo{
+  top: 25px;
+  left: 23px;
+}
+
+.laptop-bubble,
+.mobile-phone-bubble,
+.printer-bubble,
+.web-camera-bubble,
+.psp-bubble,
+.communicator-bubble,
+.photocamera-bubble,
+.main-device-bubble{
+  display: none;
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  width: 279px;
+  height: 61px;
+  background-color: #29abe2;
+  border-radius: 20px;
+}
+
+.laptop:hover .laptop-bubble,
+.mobile-phone:hover .mobile-phone-bubble,
+.printer:hover .printer-bubble,
+.web-camera:hover .web-camera-bubble,
+.psp:hover .psp-bubble,
+.communicator:hover .communicator-bubble,
+.photocamera:hover .photocamera-bubble,
+.main-device:hover .main-device-bubble{
+  display: block;
+}
+
+
+
+
+.laptop{
+  top: 183px;
+  left: 103px;
+}
+
+.laptop-bubble{
+  top: 70px;
+  left: 132px;
+}
+
+.mobile-phone{
+  top: 92px;
+  left: 196px;
+}
+
+.mobile-phone-bubble{
+  top: 161px;
+  left: 39px;
+}
+
+.printer{
+  top: 132px;
+  left: 281px;
+}
+
+.printer-bubble{
+  top: 121px;
+  left: -46px;
+}
+
+.web-camera{
+  top: 35px;
+  left: 357px;
+}
+
+.web-camera-bubble{
+  top: 218px;
+  left: -122px;
+}
+
+.psp{
+  top: 117px;
+  left: 422px;
+}
+
+.psp-bubble{
+  top: 136px;
+  left: -186px;
+}
+
+.communicator{
+  top: 80px;
+  left: 547px;
+}
+
+.communicator-bubble{
+  top: 173px;
+  left: -312px;
+}
+
+.photocamera{
+  top: 202px;
+  left: 571px;
+}
+
+.photocamera-bubble{
+  top: 51px;
+  left: -336px;
+}
+
+.main-device{
+  top: 275px;
+  left: 263px;
+}
+
+.main-device-bubble{
+  top: -123px;
+  left: -27px;
+}
+
+.egg-logo{
+  top: 25px;
+  left: 647px;
+}
+
+.description{
+  margin-bottom: 15px;
+}
+
+.note{
+  font-size: 10px;
+}
+
+.tech-specs,
+.usability{
+  border: none;
+  background-color: #f8f9f8;
+  font: inherit;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: rgb(41, 171, 226);
+  border-radius: 4px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.tech-specs:active,
+.usability:active{
+  background-color: rgba(41, 171, 226, 0.5);
+}
+
+.buy{
+  border: none;
+  background-color: rgb(234, 63, 169);
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+}
+
+.buy:hover,
+.buy:focus{
+  background-color: rgb(221, 108, 178);
+  cursor: pointer;
+}
+
+.buy:active{
+  background-color: rgb(177, 53, 129);
+}
+
+.tech-specs-list{
+  display: none;
+}
+
+.tech-specs-list_show{
+  display:block;
+}
+
+
+.tech-specs-list dl{
+display: flex;
+flex-direction: column;
+gap: 6px;
+max-height: 470px;
+flex-wrap: wrap;
+}
+
+.tech-specs-list dt{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tech-specs-list dd{
+  margin: 0;
+  padding: 0;
+}
+
+.usability-faq{
+  display: none;
+  padding-left: 22px;
+}
+
+.usability-faq_show{
+  display: block;
+}
+
+.package-button,
+.indicators-button,
+.first-connect-button{
+  border: none;
+  background-color: #f8f9f8;
+  font: inherit;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: rgb(41, 171, 226);
+  cursor: pointer;
+}
+
+.package-items{
+  display:none;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+
+.package-items_show{
+  display: flex;
+}
+
+.package-item{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+gap: 10px;
+width: 150px;
+align-items: center;
+text-align: center;
+}
+
+.indicators-item{
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.indicators-item_show{
+  display: grid;
+}
+
+.indicators-item li {
+  margin: 3px;
+  font-size: 11px;
+}
+
+.wimax-indications ul,
+.battery-indications ul,
+.wi-fi-indications ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.wimax-indications h3,
+.battery-indications h3,
+.wi-fi-indications h3{
+  margin-top: 0;
+}
+
+.wimax-indications{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.battery-indications{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.wi-fi-indications{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.visual-indicator{
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.scheme-egg{
+  float: left;
+  margin: 0 0;
+  margin-right: 30px;
+}
+
+.indicators-items_show .indicators,
+.indicators-items_show .ports,
+.indicators-items_show .buttons{
+margin-top: 30px;
+}
+
+.indicators li::marker,
+.ports li::marker,
+.buttons li::marker {
+  color: #29abe2;
+}
+
+.instruction{
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 47%;
+  max-height: 320px;
+  gap: 15px 80px;
+  margin-top: 20px;
+}
+
+.instruction_show{
+  display: flex;
+}
+
+.instruction p{
+  margin: 0;
+  margin-left: -22px;
+  margin-right: 10px;
+}
+
+.congrats,
+.warning{
+  color: rgb(41, 171, 226);
+}
+
+.big-note{
+  padding: 15px;
+  background-color: #e5e6e6;
+}
+
+.main-footer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
