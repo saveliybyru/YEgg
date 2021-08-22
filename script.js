@@ -12,6 +12,10 @@ const indicatorsItem = document.querySelector(".indicators-item");
 const connectButton = document.querySelector(".first-connect-button");
 const instruction = document.querySelector(".instruction");
 
+const buttonBuy = document.querySelector(".buy");
+const dialogBuy = document.querySelector(".not-buy");
+const closeButton = document.querySelector(".not-buy__hide");
+
 technical.addEventListener("click", function (event) {
   event.preventDefault();
   if (faq.classList.contains("usability-faq_show")) {
@@ -64,4 +68,14 @@ connectButton.addEventListener("click", function (event) {
   } else {
     instruction.classList.toggle("instruction_show")
   }
+})
+
+buttonBuy.addEventListener("click", function (event) {
+  event.preventDefault();
+  dialogBuy.classList.add("not-buy_show");
+})
+
+closeButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  dialogBuy.classList.remove("not-buy_show");
 })
